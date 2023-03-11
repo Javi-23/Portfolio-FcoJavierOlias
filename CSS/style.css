@@ -7,13 +7,13 @@
 body {
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #171717;
+    background-color: #171717;
+   
 }
 
 .head {
     display: flex;
     justify-content: space-around;
-    background: #171717;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -35,16 +35,15 @@ body {
     text-transform: uppercase;
     font-style: inherit;
     font-size: 20px;
-    background: linear-gradient(red, purple);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-animation-clip: text;
     -moz-background-clip: text;
-    animation: texto 5s linear infinite;
 }
 
 .navbar a {
+    background-color: white;
     display: block;
     padding: 20px 20px;
     text-decoration: none;
@@ -54,25 +53,15 @@ body {
     display: inline-block;
     margin: 0 20px;
     position: relative;
-    background: linear-gradient(rgb(0, 0, 0), rgb(76, 250, 119), blue);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-animation-clip: text;
     -moz-background-clip: text;
-    animation: texto 5s linear infinite;
 }
 
 
 
-@keyframes texto{
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100%{
-        filter: hue-rotate(360deg);
-    }
-}
 
 .header {
     width: 100%;
