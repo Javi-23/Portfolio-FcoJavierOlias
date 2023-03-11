@@ -1,3 +1,5 @@
+//1
+
 document.getElementById('rojo').addEventListener('click', cambiarRojo);
 document.getElementById('azul').addEventListener('click', cambiarAzul);
 document.getElementById('verde').addEventListener('click', cambiarVerde);
@@ -22,3 +24,22 @@ function cambiarRojo() {
     document.body.style.backgroundColor = '#171717';
     document.body.style.color = 'white';
   }
+
+
+  //2
+
+  function filtrarcards() {
+    var tecnologiaSeleccionada = document.getElementById("cardselec").value;
+    var proyectos = document.getElementById("box-container").children;
+    for (var i = 0; i < proyectos.length; i++) {
+      var tec = proyectos[i];
+      var tecnologias = tec.getAttribute("data-tecnologia");
+      if (tecnologiaSeleccionada === "all" || tecnologias.indexOf(tecnologiaSeleccionada) !== -1) {
+        tec.style.display = "block";
+      } else {
+        tec.style.display = "none";
+      }
+    }
+  }
+
+  
